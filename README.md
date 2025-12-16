@@ -6,9 +6,11 @@ Email: mike@alonica.net | Phone: +31 6 1270 1440
 
 ---
 
-## Summary
+## About
 
-Software engineer with over five years of programming experience across game engines, real-time graphics, desktop and mobile applications, and PLC-based industrial automation. Skilled in engine architecture, performance optimization, multi-threaded systems, AI, scripting integration, and technical quality assurance. Strong track record in leading development processes, maintaining high technical standards, and delivering reliable, optimized solutions to complex technical challenges.
+I’m a mid-level game engine programmer specializing in C/C++11 with a low-level, memory-conscious approach and a preference for explicit control over codebases. I work on engine architecture, graphics, animation, physics, and tools, and have contributed to award-winning projects like Atan (BAFTA-winning student game released on Steam) and applied robotics systems, such as an agricultural crop-scanner rover used at Wageningen University.
+
+Curious and creative, I thrive on solving complex problems, improving systems, and mentoring others who share my passion for deep technical learning. I enjoy collaborative, brainy environments where I can tinker, iterate, and bring new ideas to life. Always looking for the next challenge that combines technical depth and creative problem-solving.
 
 ---
 
@@ -92,7 +94,7 @@ English • Spanish
 **Atan — Steam Game [Link](https://store.steampowered.com/app/2707360/Atan/)**  
 Adventure game set on a massive living colossus, focused on traversal, climbing mechanics, and environmental challenges.  
 
-**Remnants In The Sand — Itch.io Game [Link](https://buas.itch.io/remnants-in-the-sand)**  
+**Remnants In The Sand — Itch Game [Link](https://buas.itch.io/remnants-in-the-sand)**  
 Third-person adventure game set on a desert alien planet, focused on exploration, stealth, and environmental storytelling.  
 
 **Gauntlet Remake [Link 1](https://conorbuas.itch.io/gauntlet-like) | [Link 2](https://conorbuas.itch.io/gauntlet-like-2)**  
