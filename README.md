@@ -1,8 +1,8 @@
 # Conor Damery  
 Game Engine Programmer | Science Tech Enthusiast  
 Breda, North Brabant, Netherlands  
-mike@alonica.net • +31 6 1270 1440  
-https://linkedin.com/in/conor-damery
+Email: mike@alonica.net | Phone: +31 6 1270 1440  
+[Github](https://github.com/Belfer) | [Linkedin](https://linkedin.com/in/conor-damery)
 
 ---
 
@@ -88,20 +88,24 @@ English • Spanish
 
 ## Projects
 
-**Atan - Steam Game**  
+**Atan — Steam Game [Link](https://store.steampowered.com/app/2707360/Atan/)**  
+Adventure game set on a massive living colossus, focused on traversal, climbing mechanics, and environmental challenges.  
 
-- Atan is an action-adventure game where you traverse a massive colossus. Use your climbing skills together with your bow and anchors to journey over the massive giant. But beware, because this rough terrain contains many challenges, for the colossus itself is still alive and in need of your help. [Available on Steam](https://store.steampowered.com/app/2707360/Atan/).
+**Remnants In The Sand — Itch.io Game [Link](https://buas.itch.io/remnants-in-the-sand)**  
+Third-person adventure game set on a desert alien planet, focused on exploration, stealth, and environmental storytelling.  
 
-**RPiX – Game Tech Demos on Raspberry Pi**  
+**Gauntlet Remake [Link 1](https://conorbuas.itch.io/gauntlet-like) | [Link 2](https://conorbuas.itch.io/gauntlet-like-2)**  
+**Link 1:** Student project inspired by the arcade game *Gauntlet*, developed in four weeks using a custom-built engine.  
+**Link 2:** Prototype tech demo and full rework of the original project, featuring a newly developed custom game engine.  
 
-- Developing a series of game technology demos targeting multiple hardware platforms: Raspberry Pi 3B, 3B+, 4, 5, to higher-end gaming laptops/PCs.  
-- Project focuses on adaptive rendering quality based on hardware and available resources (OpenGL extensions, multithreading, RAM, LODs, etc.).  
-- Early-stage project available at [github.com/Belfer/rpix](https://github.com/Belfer/rpix).  
-- Demonstrates experimentation with scalable graphics systems and performance optimization for constrained hardware.
+**RPiX — Game Tech Demos on Raspberry Pi [Link](https://github.com/Belfer/rpix)**  
+Game technology demos targeting Raspberry Pi (3–5) and PC, with emphasis on scalable rendering, OpenGL extensions, multithreading, and LOD systems.  
 
-**Geometric Algebra / Projective Geometric Algebra**  
-- Conducted research and development in geometric algebra (GA), including giving a few lectures at Breda University of Applied Sciences.  
-- Currently deepening understanding of formal mathematics, including abstract algebra, with a focus on applying Plane-based Geometric Algebra (PGA) and GA concepts to game development.
+**Geometric Algebra / Projective Geometric Algebra [Link](https://github.com/Belfer/GALectures)**  
+Research and applied work in geometric algebra, including lectures at Breda University of Applied Sciences and applications of PGA concepts in game development.  
+
+**Crop Scanner Rover [Link](https://www.linkedin.com/feed/update/urn:li:activity:7034537858061201409/)**  
+Contributed as a core developer to the first release of this machine, primarily designing the algorithm to merge data from multiple sensors.  
 
 ---
 
@@ -109,11 +113,3 @@ English • Spanish
 
 - edX Verified Certificate – Computer Graphics  
 - Creating a Game Environment in Blender and Unity – LinkedIn
-
----
-
-## Contact
-
-LinkedIn: https://linkedin.com/in/conor-damery  
-Email: mike@alonica.net  
-Phone: +31 6 1270 1440
