@@ -66,10 +66,11 @@ FETAC Level 6, Game and Interactive Media Design
 ## Skills
 
 **Technical:**  
-C++ • Game Engines • Unreal Engine • Computer Graphics • OpenGL • Physics Engines • Scripting Integration • Multi-threaded Programming • Memory Management • Algorithms • Data Structures • PLC Programming (Beckhoff)
+C/C++ • C# • Custom Game Engines • Unreal Engine • Unity • Godot • Computer Graphics • OpenGL • Vulkan • Git • Perforce  
+Physics Engines • Scripting Integration • Multi-threaded Programming • Memory Management • Algorithms • Data Structures • Profiling and Optimization • PLC Programming (Beckhoff)
 
 **Professional:**  
-Project Management • Technical Leadership • Profiling and Optimization • Build Pipelines • QA Integration • Cross-discipline Collaboration
+Technical Leadership • Cross-discipline Collaboration • Project Management • Jira • Build Pipelines • QA Integration
 
 **Languages:**  
 English • Spanish
