@@ -1,69 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conor Damery - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Conor Damery</h1>
-        <p>Technical Lead & Software Developer</p>
-        <p>Breda, North Brabant, Netherlands</p>
-        <p>Email: <a href="mailto:mike@alonica.net">mike@alonica.net</a> | Phone: +31 6 1270 1440</p>
-        <p><a href="https://linkedin.com/in/conor-damery" target="_blank">LinkedIn</a></p>
+    <div id="background-container" aria-hidden="true"></div>
 
-        <!-- Three.js canvas container -->
-        <div id="three-container" style="width: 100%; height: 300px;"></div>
+    <header>
+        <div class="page panel">
+            <h1>Conor Damery</h1>
+            <p>Game Engine Programmer | Science Tech Enthusiast</p>
+            <p>Breda, North Brabant, Netherlands</p>
+            <p>Email: <a href="mailto:mike@alonica.net">mike@alonica.net</a> | Phone: +31 6 1270 1440</p>
+            <p><a href="https://github.com/Belfer" target="_blank" rel="noopener noreferrer">Github</a> | <a href="https://linkedin.com/in/conor-damery" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
     </header>
 
     <nav>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
-        <a href="#research">Research & Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="page nav-panel">
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#awards">Awards</a>
+            <a href="#projects">Projects</a>
+        </div>
     </nav>
 
     <main>
-        <section id="experience">
-            <h2>Experience</h2>
-            <!-- Copy your experience content here from Markdown -->
-        </section>
+        <div class="page content-panel">
+            <section id="experience" class="panel-section">
+                <h2>Experience</h2>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <!-- Copy your skills content -->
-        </section>
+                <h3>Technical Lead — Breda University of Applied Sciences</h3>
+                <p><em>September 2023 – June 2024</em></p>
+                <ul>
+                    <li>Worked as a technical lead on "Atan", a game developed in Unreal Engine 5 and released on Steam.</li>
+                    <li>Implemented core mechanics in C++ using the ALS Refactored animation system.</li>
+                    <li>Ensured technical quality across multiple disciplines and refactored designer-created systems for performance.</li>
+                    <li>Set up build pipelines and contributed to QA process design.</li>
+                </ul>
 
-        <section id="education">
-            <h2>Education</h2>
-            <!-- Copy education content -->
-        </section>
+                <h3>Programmer — Pliant – Partner in Technical Solutions</h3>
+                <p><em>December 2017 – April 2021</em></p>
+                <ul>
+                    <li>Led development of a graphics engine and 3D viewer tool for industrial systems.</li>
+                    <li>Authored complex 3D algorithms critical to HMI control and system operation.</li>
+                    <li>Worked with C#, WPF, OpenGL, and PLC programming (Beckhoff).</li>
+                    <li>Designed performance optimizations improving efficiency and UX in machine control environments.</li>
+                </ul>
 
-        <section id="awards">
-            <h2>Awards</h2>
-            <!-- BAFTA award info -->
-        </section>
+                <h3>Lead Programmer — Cabalry Ltd.</h3>
+                <p><em>December 2014 – May 2016</em></p>
+                <ul>
+                    <li>Led development of Cabalry, a taxi security mobile app focusing on safety, reliability, and performance.</li>
+                </ul>
+            </section>
 
-        <section id="research">
-            <h2>Research & Personal Projects</h2>
-            <!-- GA & RPiX project info -->
-        </section>
+            <section id="skills" class="panel-section">
+                <h2>Skills</h2>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:mike@alonica.net">mike@alonica.net</a></p>
-            <p>Phone: +31 6 1270 1440</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/conor-damery" target="_blank">linkedin.com/in/conor-damery</a></p>
-        </section>
+                <h3>Technical</h3>
+                <p>C++ • Game Engines • Unreal Engine • Computer Graphics • OpenGL • Physics Engines • Scripting Integration • Multi-threaded Programming • Memory Management • Algorithms • Data Structures • PLC Programming (Beckhoff)</p>
+
+                <h3>Professional</h3>
+                <p>Project Management • Technical Leadership • Profiling and Optimization • Build Pipelines • QA Integration • Cross-discipline Collaboration</p>
+                
+                <h3>Languages</h3>
+                <p>English • Spanish</p>
+            </section>
+
+            <section id="education" class="panel-section">
+                <h2>Education</h2>
+
+                <h3>Breda University of Applied Sciences</h3>
+                <p>Game and Interactive Media Design — 2020 – 2024</p>
+
+                <h3>St. Johns Central College</h3>
+                <p>FETAC Level 6, Game and Interactive Media Design — 2014 – 2015</p>
+            </section>
+
+            <section id="awards" class="panel-section">
+                <h2>Awards</h2>
+                <p>BAFTA Student Award Winner for <strong>Atan</strong> (Games category).</p>
+            </section>
+
+            <section id="projects" class="panel-section">
+                <h2>Projects</h2>
+
+                <h3>Atan - Steam Game <a href="https://store.steampowered.com/app/2707360/Atan/" target="_blank" rel="noopener noreferrer">[Link]</a></h3>
+                <p>Atan is an action-adventure game where you traverse a massive colossus. Use your climbing skills together with your bow and anchors to journey over the massive giant. But beware, because this rough terrain contains many challenges, for the colossus itself is still alive and in need of your help.</p>
+                
+                <h3>RPiX – Game Tech Demos on Raspberry Pi <a href="https://github.com/Belfer/rpix" target="_blank" rel="noopener noreferrer">[Link]</a></h3>
+                <p>Developing game technology demos targeting multiple hardware platforms (Raspberry Pi 3B/3B+/4/5 and higher-end laptops/PCs). Focus on adaptive rendering quality based on available hardware (OpenGL extensions, multithreading, LODs).</p>
+            
+                <h3>Geometric Algebra / Projective Geometric Algebra</h3>
+                <p>Conducted research and development in geometric algebra (GA), including giving a few lectures at Breda University of Applied Sciences. Currently deepening formal mathematics knowledge, with focus on applying Plane-based Geometric Algebra (PGA) and GA concepts to game development.</p>
+            </section>
+        </div>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 Conor Damery</p>
+        <div class="page panel">
+            <p>&copy; 2025 Conor Damery</p>
+        </div>
     </footer>
 
     <script src="background.js"></script>

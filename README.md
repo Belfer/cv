@@ -71,6 +71,9 @@ C++ • Game Engines • Unreal Engine • Computer Graphics • OpenGL • Phys
 **Professional:**  
 Project Management • Technical Leadership • Profiling and Optimization • Build Pipelines • QA Integration • Cross-discipline Collaboration
 
+**Languages:**  
+English • Spanish
+
 ---
 
 ## Career Highlights
@@ -83,11 +86,11 @@ Project Management • Technical Leadership • Profiling and Optimization • B
 
 ---
 
-## Research & Personal Projects
+## Projects
 
-**Geometric Algebra / Projective Geometric Algebra**  
-- Conducted research and development in geometric algebra (GA), including giving a few lectures at Breda University of Applied Sciences.  
-- Currently deepening understanding of formal mathematics, including abstract algebra, with a focus on applying Plane-based Geometric Algebra (PGA) and GA concepts to game development.
+**Atan - Steam Game**  
+
+- Atan is an action-adventure game where you traverse a massive colossus. Use your climbing skills together with your bow and anchors to journey over the massive giant. But beware, because this rough terrain contains many challenges, for the colossus itself is still alive and in need of your help. [Available on Steam](https://store.steampowered.com/app/2707360/Atan/).
 
 **RPiX – Game Tech Demos on Raspberry Pi**  
 
@@ -95,6 +98,10 @@ Project Management • Technical Leadership • Profiling and Optimization • B
 - Project focuses on adaptive rendering quality based on hardware and available resources (OpenGL extensions, multithreading, RAM, LODs, etc.).  
 - Early-stage project available at [github.com/Belfer/rpix](https://github.com/Belfer/rpix).  
 - Demonstrates experimentation with scalable graphics systems and performance optimization for constrained hardware.
+
+**Geometric Algebra / Projective Geometric Algebra**  
+- Conducted research and development in geometric algebra (GA), including giving a few lectures at Breda University of Applied Sciences.  
+- Currently deepening understanding of formal mathematics, including abstract algebra, with a focus on applying Plane-based Geometric Algebra (PGA) and GA concepts to game development.
 
 ---
 

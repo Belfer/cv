@@ -1,61 +1,215 @@
+:root{
+  --color-main-header: #dfd6c7;
+  --color-secondary-header: #d8cfbf;
+  --color-paragraph: #d2d2d2;
+  --color-link: #b1d4f1;
+  --panel-tint: rgba(34, 31, 22, 0.45);
+
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --muted: rgb(167, 162, 159);
+  --text: var(--color-paragraph);
+  --accent: var(--color-link);
+  --panel-blur: 64px;
+  --max-width: 1000px;
+  --gutter: 28px;
+  --radius: 12px;
+  --gap: 1rem;
+  --page-vertical: 1.25rem;
+  --text-halo-color: rgba(10,15,20,0.12);
+  --text-halo-strong: rgba(10,15,20,0.18);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
-header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #222;
-    color: #fff;
+#background-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+  will-change: transform;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: #444;
-    padding: 0.5rem 0;
+.panel {
+  background: var(--panel-tint);
+  backdrop-filter: blur(var(--panel-blur));
+  -webkit-backdrop-filter: blur(var(--panel-blur));
+  border-radius: calc(var(--radius) / 1.6);
+  padding: var(--page-vertical);
+  box-shadow: 0 10px 34px rgba(17,24,39,0.06);
 }
+
+.nav-panel {
+  background: var(--panel-tint);
+  backdrop-filter: blur(calc(var(--panel-blur) - 3px));
+  -webkit-backdrop-filter: blur(calc(var(--panel-blur) - 3px));
+  padding: calc(var(--page-vertical) * 0.6);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.content-panel { margin-top: 1rem; padding: 0; background: transparent; }
+
+.panel-section {
+  padding: 0.9rem;
+  border-radius: 10px;
+  background: var(--panel-tint);
+  backdrop-filter: blur(calc(var(--panel-blur) - 3px));
+  -webkit-backdrop-filter: blur(calc(var(--panel-blur) - 3px));
+  box-shadow: 0 8px 20px rgba(17,24,39,0.035);
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0.4rem 0 0.8rem 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  list-style-position: outside;
+}
+
+.demo-section {
+  min-height: 60vh;
+  padding: 5vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+header .page { padding-top: 0; padding-bottom: 0; }
+header h1 { margin: 0; font-size: 1.6rem; color: var(--color-main-header); }
+header p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
+header a { color: var(--color-link); text-decoration: none; font-weight: 600; }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--color-link);
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 0.95rem;
 }
+nav a:hover { background: rgba(0,0,0,0.04); transform: translateY(-2px); }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
+main { margin: var(--page-vertical) auto; padding: 0; }
 section h2 {
-    border-bottom: 2px solid #222;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+  margin: 0 0 0.6rem 0;
+  font-size: 1.15rem;
+  border-bottom: 2px solid rgba(0,0,0,0.04);
+  padding-bottom: 0.45rem;
+  color: var(--color-secondary-header);
+}
+h3 { margin: 0.45rem 0 0.1rem 0; font-size: 1rem; color: var(--color-secondary-header); }
+h4 { margin: 0.4rem 0; font-size: 0.95rem; color: var(--muted); }
+p { margin: 0.35rem 0; color: var(--color-paragraph); font-size: 0.95rem; }
+li { color: var(--color-paragraph); }
+strong { color: var(--color-paragraph); }
+
+h1, h2, h3, h4, p, li, a, .btn {
+  text-shadow:
+    0 6px 18px var(--text-halo-color),
+    0 10px 30px rgba(10,15,20,0.04);
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #222;
-    color: #fff;
+h1, h2 {
+  text-shadow:
+    0 10px 28px var(--text-halo-strong),
+    0 18px 48px rgba(10,15,20,0.06);
+}
+
+footer .page { padding-top: 0; padding-bottom: 0; }
+footer { margin-top: var(--page-vertical); }
+
+.center { text-align: center; }
+.muted { color: var(--muted); }
+.btn {
+  display: inline-block;
+  padding: 0.45rem 0.7rem;
+  background: var(--color-link);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(0,119,255,0.12);
+}
+
+a, a:link, a:visited {
+  color: var(--color-link);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  transition: color 120ms ease, opacity 120ms ease;
+}
+
+a:hover, a:focus, a:active {
+  color: var(--color-link);
+  opacity: 0.92;
+  text-decoration-thickness: 2px;
+  outline: none;
+}
+
+@media (min-width: 1000px) {
+  body { padding-left: var(--gutter); padding-right: var(--gutter); }
+}
+
+@media (min-width: 720px) {
+  header h1 { font-size: 2rem; }
+  .panel-section { padding: 1rem; }
+  .nav-panel { padding: calc(var(--page-vertical) * 0.6); }
+  .panel { padding: var(--page-vertical); }
+  main { margin: calc(var(--page-vertical) * 1.2) auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  .panel, .panel-section { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  h1, h2, h3, h4, p, li, a { text-shadow: none; }
+}
+
+@media (max-width: 720px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .panel-section {
+    padding: 0.5rem;
+  }
+
+  .page {
+    padding: 0 0.5rem;
+  }
+
+  p, h3, h4 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.35rem 0.5rem;
+  }
 }
