@@ -100,7 +100,7 @@ Third-person adventure game set on a desert alien planet, focused on exploration
 **Link 2:** Prototype tech demo and full rework of the original project, featuring a newly developed custom game engine.  
 
 **RPiX — Game Tech Demos on Raspberry Pi [Link](https://github.com/Belfer/rpix)**  
-Game technology demos targeting Raspberry Pi (3–5) and PC, with emphasis on scalable rendering, OpenGL extensions, multithreading, and LOD systems.  
+Game technology demos targeting Raspberry Pi (3–5) and PC, with emphasis on scalable rendering, OpenGL extensions, multithreading, LOD systems, and native KMS/DRM graphics pipelines.  
 
 **Geometric Algebra / Projective Geometric Algebra [Link](https://github.com/Belfer/GALectures)**  
 Research and applied work in geometric algebra, including lectures at Breda University of Applied Sciences and applications of PGA concepts in game development.  

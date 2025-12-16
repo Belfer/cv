@@ -25,8 +25,8 @@
   const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
 
   // Render pipeline
-  const vert = `#version 300 es
-precision lowp float;
+  const vertSrc = `#version 300 es
+precision mediump float;
 layout(location=0) in vec2 a_position;
 out vec2 v_uv;
 void main() {
@@ -35,8 +35,8 @@ void main() {
 }
 `;
 
-  const frag = `#version 300 es
-precision lowp float;
+  const fragSrc = `#version 300 es
+precision mediump float;
 in vec2 v_uv;
 out vec4 fragColor;
 uniform vec2 iResolution;
@@ -61,7 +61,7 @@ float fbm4( vec2 p )
     f += 0.2500*noise( p ); p = m*p*2.03;
     f += 0.1250*noise( p ); p = m*p*2.01;
     f += 0.0625*noise( p );
-    return f/0.9375;
+    return f*1.06667;
 }
 
 float fbm6( vec2 p )
@@ -73,7 +73,7 @@ float fbm6( vec2 p )
     f += 0.062500*(0.5+0.5*noise( p )); p = m*p*2.04;
     f += 0.031250*(0.5+0.5*noise( p )); p = m*p*2.01;
     f += 0.015625*(0.5+0.5*noise( p ));
-    return f/0.96875;
+    return f*1.03226;
 }
 
 vec2 fbm4_2( vec2 p )
@@ -122,7 +122,7 @@ void main() {
 
 #if 1
     // gpu derivatives - bad quality, but fast
-	vec3 nor = normalize( vec3( dFdx(f)*iResolution.x, 6.0, dFdy(f)*iResolution.y ) );
+	  vec3 nor = normalize( vec3( dFdx(f)*iResolution.x, 6.0, dFdy(f)*iResolution.y ) );
 #else    
     // manual derivatives - better quality, but slower
     vec4 kk;
@@ -142,7 +142,7 @@ void main() {
 }
 `;
 
-  function compile(src, type) {
+  function compile(type, src) {
     const s = gl.createShader(type);
     gl.shaderSource(s, src);
     gl.compileShader(s);
@@ -154,8 +154,8 @@ void main() {
     return s;
   }
 
-  const vs = compile(vert, gl.VERTEX_SHADER);
-  const fs = compile(frag, gl.FRAGMENT_SHADER);
+  const vs = compile(gl.VERTEX_SHADER, vertSrc);
+  const fs = compile(gl.FRAGMENT_SHADER, fragSrc);
   const prog = gl.createProgram();
   gl.attachShader(prog, vs);
   gl.attachShader(prog, fs);
