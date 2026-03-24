@@ -91,6 +91,15 @@ English • Spanish
 
 ## Projects
 
+**R36S GameBootstrap — Cross-Platform Game Engine (Embedded & High-end) [Link](https://github.com/Belfer/r36s-gamebootstrap)**
+Custom game engine targeting both constrained embedded devices and high-end systems, emphasizing minimal dependencies (including no STL), fine-grained control via custom memory allocators, and platform abstraction layers. Structured as progressive branches to serve as educational building blocks toward advanced engine features.  
+
+**Geometric Algebra / Projective Geometric Algebra [Link](https://github.com/Belfer/GALectures)**  
+Research and applied work in geometric algebra, including lectures at Breda University of Applied Sciences and applications of PGA concepts in game development.  
+
+**Crop Scanner Rover [Link](https://www.linkedin.com/feed/update/urn:li:activity:7034537858061201409/)**  
+Contributed as a core developer to the first release of this machine, primarily designing the algorithm to merge data from multiple sensors.  
+
 **Atan — Steam Game [Link](https://store.steampowered.com/app/2707360/Atan/)**  
 Adventure game set on a massive living colossus, focused on traversal, climbing mechanics, and environmental challenges.  
 
@@ -100,15 +109,6 @@ Third-person adventure game set on a desert alien planet, focused on exploration
 **Gauntlet Remake [Link 1](https://conorbuas.itch.io/gauntlet-like) | [Link 2](https://conorbuas.itch.io/gauntlet-like-2)**  
 **Link 1:** Student project inspired by the arcade game *Gauntlet*, developed in four weeks using a custom-built engine.  
 **Link 2:** Prototype tech demo and full rework of the original project, featuring a newly developed custom game engine.  
-
-**RPiX — Game Tech Demos on Raspberry Pi [Link](https://github.com/Belfer/rpix)**  
-Game technology demos targeting Raspberry Pi (3–5) and PC, with emphasis on scalable rendering, OpenGL extensions, multithreading, LOD systems, and native KMS/DRM graphics pipelines.  
-
-**Geometric Algebra / Projective Geometric Algebra [Link](https://github.com/Belfer/GALectures)**  
-Research and applied work in geometric algebra, including lectures at Breda University of Applied Sciences and applications of PGA concepts in game development.  
-
-**Crop Scanner Rover [Link](https://www.linkedin.com/feed/update/urn:li:activity:7034537858061201409/)**  
-Contributed as a core developer to the first release of this machine, primarily designing the algorithm to merge data from multiple sensors.  
 
 ---
 
